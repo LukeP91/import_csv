@@ -1,0 +1,15 @@
+<h1>List of all categories</h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+  </tr>
+  <% @categories.each do |category| %>
+    <tr>
+      <td><%= category.name %></td>
+    </tr>
+  <%end%>
+</table>
+
+</br>
+<%= link_to 'Home', root_path %>
