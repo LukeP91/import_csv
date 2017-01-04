@@ -9,7 +9,7 @@ class BoardGamesController < ApplicationController
   end
 
   def import
-    BoardGame.import(params[:file])
+    ImportBoardGamesFromCSV.import(params[:file])
     redirect_to board_games_path, notice: "New board games were imported"
   end
 end
