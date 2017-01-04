@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: rails_kata_development
+  database: import_csv_development
 
 test:
   <<: *default
-  database: rails_kata_test
+  database: import_csv_test
 
 production:
   <<: *default
-  database: rails_kata_production
+  database: import_csv_production
   username: rails_kata
   password: <%= ENV['RAILS_KATA_DATABASE_PASSWORD'] %>

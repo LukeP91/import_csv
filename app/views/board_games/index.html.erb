@@ -1,5 +1,11 @@
 <h2>List of all board games</h2>
 
+<h4>Import new games from CSV</h4>
+<%= form_tag import_board_games_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import CSV" %>
+<% end %>
+
 <table>
   <tr>
     <td>Name</td>
